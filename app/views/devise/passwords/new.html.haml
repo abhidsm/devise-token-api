@@ -1,0 +1,8 @@
+.row
+  .col-md-4.col-md-offset-4
+    %h2 Forgot your password?
+    = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }, :defaults => {:wrapper_html => {:class => 'form-group'}}) do |f|
+      = f.error_notification
+      = f.input :email, :required => true, :autofocus => true, :input_html => { :class => 'form-control' }
+      = f.button :submit, "Send me reset password instructions", :class => 'btn btn-lg btn-primary btn-block'
+    = render "devise/shared/links"
