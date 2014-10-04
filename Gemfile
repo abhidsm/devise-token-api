@@ -45,7 +45,7 @@ gem "haml-rails"
 gem "jquery-rails"
 gem "redis"
 gem "rspec-rails", ">= 2.0.1", group: [:development, :test]
-
+gem "letter_opener", group: :development
 
 gem "simple_form", "~> 3.0.0.rc"
 gem 'factory_girl_rails'
